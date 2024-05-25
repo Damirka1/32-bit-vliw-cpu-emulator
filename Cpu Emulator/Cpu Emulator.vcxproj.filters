@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cpu\Cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cpu\Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Direct2D\Graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\AppWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\WindowElements\Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\WindowElements\DefaultElements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\WindowElements\Label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\WindowElements\WindowElements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Input\Keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Input\KeyboardEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Input\MessageHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\am_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_englsh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_items.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_iwad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_textur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_think.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\d_ticcmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\deh_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\deh_misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\deh_str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doomdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doomdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doomfeatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doomgeneric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doomkeys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doomstat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\doomtype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\dstrings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\f_finale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\f_wipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\g_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\gusconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\hu_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\hu_stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_cdmus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_endoom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_scale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_swap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\i_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_argv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_bbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_cheat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_controls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_fixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\m_random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\memio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\mus2mid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_dedicated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_query.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_sdl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\net_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_inter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_mobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_pspr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_saveg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_setup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_spec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\p_tick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_bsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_plane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_segs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_sky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\r_things.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\s_sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\sha1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\sounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\st_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\st_stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\statdump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\v_patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\v_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\w_checksum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\w_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\w_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\w_merge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\w_wad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\wi_stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\Source\z_zone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\DoomGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\DoomWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doom\DoomKeyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Terminal\Terminal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Direct2D\Graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\AppWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Input\Keyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Input\KeyboardEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cpu\Cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cpu\Instruction.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\am_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\d_event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\d_items.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\d_iwad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\d_loop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\d_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\d_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\d_net.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\doomdef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\doomgeneric.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\doomstat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\dstrings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\dummy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\f_finale.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\f_wipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\g_game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\gusconf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\hu_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\hu_stuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_cdmus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_endoom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_joystick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_scale.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_sound.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_system.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\i_video.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\icon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_argv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_bbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_cheat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_controls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_fixed.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\m_random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\memio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\mus2mid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_ceilng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_doors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_enemy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_floor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_inter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_lights.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_maputl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_mobj.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_plats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_pspr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_saveg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_setup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_sight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_spec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_switch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_telept.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_tick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\p_user.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_bsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_plane.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_segs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_sky.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\r_things.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\s_sound.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\sounds.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\st_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\st_stuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\statdump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\v_video.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\w_checksum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\w_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\w_file_stdc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\w_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\w_wad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\wi_stuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\Source\z_zone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\DoomGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\doomgeneric_va.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\DoomWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doom\DoomKeyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Terminal\Terminal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

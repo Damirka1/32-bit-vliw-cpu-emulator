@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c86a002f-fe12-42c7-879f-0ee6c3282e1d}</ProjectGuid>
+    <RootNamespace>CpuEmulator</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Cpu\Cpu.h" />
+    <ClInclude Include="Cpu\Memory.h" />
+    <ClInclude Include="Doom\DoomGame.h" />
+    <ClInclude Include="Doom\DoomWrapper.h" />
+    <ClInclude Include="Doom\Source\am_map.h" />
+    <ClInclude Include="Doom\Source\config.h" />
+    <ClInclude Include="Doom\Source\deh_main.h" />
+    <ClInclude Include="Doom\Source\deh_misc.h" />
+    <ClInclude Include="Doom\Source\deh_str.h" />
+    <ClInclude Include="Doom\Source\doom.h" />
+    <ClInclude Include="Doom\Source\doomdata.h" />
+    <ClInclude Include="Doom\Source\doomdef.h" />
+    <ClInclude Include="Doom\Source\doomfeatures.h" />
+    <ClInclude Include="Doom\Source\doomgeneric.h" />
+    <ClInclude Include="Doom\Source\doomkeys.h" />
+    <ClInclude Include="Doom\Source\doomstat.h" />
+    <ClInclude Include="Doom\Source\doomtype.h" />
+    <ClInclude Include="Doom\Source\dstrings.h" />
+    <ClInclude Include="Doom\Source\d_englsh.h" />
+    <ClInclude Include="Doom\Source\d_event.h" />
+    <ClInclude Include="Doom\Source\d_items.h" />
+    <ClInclude Include="Doom\Source\d_iwad.h" />
+    <ClInclude Include="Doom\Source\d_loop.h" />
+    <ClInclude Include="Doom\Source\d_main.h" />
+    <ClInclude Include="Doom\Source\d_mode.h" />
+    <ClInclude Include="Doom\Source\d_player.h" />
+    <ClInclude Include="Doom\Source\d_textur.h" />
+    <ClInclude Include="Doom\Source\d_think.h" />
+    <ClInclude Include="Doom\Source\d_ticcmd.h" />
+    <ClInclude Include="Doom\Source\f_finale.h" />
+    <ClInclude Include="Doom\Source\f_wipe.h" />
+    <ClInclude Include="Doom\Source\gusconf.h" />
+    <ClInclude Include="Doom\Source\g_game.h" />
+    <ClInclude Include="Doom\Source\hu_lib.h" />
+    <ClInclude Include="Doom\Source\hu_stuff.h" />
+    <ClInclude Include="Doom\Source\info.h" />
+    <ClInclude Include="Doom\Source\i_cdmus.h" />
+    <ClInclude Include="Doom\Source\i_endoom.h" />
+    <ClInclude Include="Doom\Source\i_joystick.h" />
+    <ClInclude Include="Doom\Source\i_scale.h" />
+    <ClInclude Include="Doom\Source\i_sound.h" />
+    <ClInclude Include="Doom\Source\i_swap.h" />
+    <ClInclude Include="Doom\Source\i_system.h" />
+    <ClInclude Include="Doom\Source\i_timer.h" />
+    <ClInclude Include="Doom\Source\i_video.h" />
+    <ClInclude Include="Doom\Source\memio.h" />
+    <ClInclude Include="Doom\Source\mus2mid.h" />
+    <ClInclude Include="Doom\Source\m_argv.h" />
+    <ClInclude Include="Doom\Source\m_bbox.h" />
+    <ClInclude Include="Doom\Source\m_cheat.h" />
+    <ClInclude Include="Doom\Source\m_config.h" />
+    <ClInclude Include="Doom\Source\m_controls.h" />
+    <ClInclude Include="Doom\Source\m_fixed.h" />
+    <ClInclude Include="Doom\Source\m_menu.h" />
+    <ClInclude Include="Doom\Source\m_misc.h" />
+    <ClInclude Include="Doom\Source\m_random.h" />
+    <ClInclude Include="Doom\Source\net_client.h" />
+    <ClInclude Include="Doom\Source\net_dedicated.h" />
+    <ClInclude Include="Doom\Source\net_defs.h" />
+    <ClInclude Include="Doom\Source\net_gui.h" />
+    <ClInclude Include="Doom\Source\net_io.h" />
+    <ClInclude Include="Doom\Source\net_loop.h" />
+    <ClInclude Include="Doom\Source\net_packet.h" />
+    <ClInclude Include="Doom\Source\net_query.h" />
+    <ClInclude Include="Doom\Source\net_sdl.h" />
+    <ClInclude Include="Doom\Source\net_server.h" />
+    <ClInclude Include="Doom\Source\p_inter.h" />
+    <ClInclude Include="Doom\Source\p_local.h" />
+    <ClInclude Include="Doom\Source\p_mobj.h" />
+    <ClInclude Include="Doom\Source\p_pspr.h" />
+    <ClInclude Include="Doom\Source\p_saveg.h" />
+    <ClInclude Include="Doom\Source\p_setup.h" />
+    <ClInclude Include="Doom\Source\p_spec.h" />
+    <ClInclude Include="Doom\Source\p_tick.h" />
+    <ClInclude Include="Doom\Source\r_bsp.h" />
+    <ClInclude Include="Doom\Source\r_data.h" />
+    <ClInclude Include="Doom\Source\r_defs.h" />
+    <ClInclude Include="Doom\Source\r_draw.h" />
+    <ClInclude Include="Doom\Source\r_local.h" />
+    <ClInclude Include="Doom\Source\r_main.h" />
+    <ClInclude Include="Doom\Source\r_plane.h" />
+    <ClInclude Include="Doom\Source\r_segs.h" />
+    <ClInclude Include="Doom\Source\r_sky.h" />
+    <ClInclude Include="Doom\Source\r_state.h" />
+    <ClInclude Include="Doom\Source\r_things.h" />
+    <ClInclude Include="Doom\Source\sha1.h" />
+    <ClInclude Include="Doom\Source\sounds.h" />
+    <ClInclude Include="Doom\Source\statdump.h" />
+    <ClInclude Include="Doom\Source\st_lib.h" />
+    <ClInclude Include="Doom\Source\st_stuff.h" />
+    <ClInclude Include="Doom\Source\s_sound.h" />
+    <ClInclude Include="Doom\Source\tables.h" />
+    <ClInclude Include="Doom\Source\v_patch.h" />
+    <ClInclude Include="Doom\Source\v_video.h" />
+    <ClInclude Include="Doom\Source\wi_stuff.h" />
+    <ClInclude Include="Doom\Source\w_checksum.h" />
+    <ClInclude Include="Doom\Source\w_file.h" />
+    <ClInclude Include="Doom\Source\w_main.h" />
+    <ClInclude Include="Doom\Source\w_merge.h" />
+    <ClInclude Include="Doom\Source\w_wad.h" />
+    <ClInclude Include="Doom\Source\z_zone.h" />
+    <ClInclude Include="Window\Terminal\Terminal.h" />
+    <ClInclude Include="Window\AppWindow.h" />
+    <ClInclude Include="Window\Direct2D\Graphics.h" />
+    <ClInclude Include="Doom\DoomKeyboard.h" />
+    <ClInclude Include="Window\Input\Keyboard.h" />
+    <ClInclude Include="Window\Input\KeyboardEvents.h" />
+    <ClInclude Include="Window\Input\MessageHandler.h" />
+    <ClInclude Include="Window\WindowElements\Button.h" />
+    <ClInclude Include="Window\WindowElements\DefaultElements.h" />
+    <ClInclude Include="Window\WindowElements\Label.h" />
+    <ClInclude Include="Window\WindowElements\WindowElements.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cpu\Cpu.cpp" />
+    <ClCompile Include="Cpu\Instruction.h" />
+    <ClCompile Include="Doom\DoomGame.cpp" />
+    <ClCompile Include="Doom\doomgeneric_va.c" />
+    <ClCompile Include="Doom\DoomWrapper.cpp" />
+    <ClCompile Include="Doom\Source\am_map.c" />
+    <ClCompile Include="Doom\Source\doomdef.c" />
+    <ClCompile Include="Doom\Source\doomgeneric.c" />
+    <ClCompile Include="Doom\Source\doomstat.c" />
+    <ClCompile Include="Doom\Source\dstrings.c" />
+    <ClCompile Include="Doom\Source\dummy.c" />
+    <ClCompile Include="Doom\Source\d_event.c" />
+    <ClCompile Include="Doom\Source\d_items.c" />
+    <ClCompile Include="Doom\Source\d_iwad.c" />
+    <ClCompile Include="Doom\Source\d_loop.c" />
+    <ClCompile Include="Doom\Source\d_main.c" />
+    <ClCompile Include="Doom\Source\d_mode.c" />
+    <ClCompile Include="Doom\Source\d_net.c" />
+    <ClCompile Include="Doom\Source\f_finale.c" />
+    <ClCompile Include="Doom\Source\f_wipe.c" />
+    <ClCompile Include="Doom\Source\gusconf.c" />
+    <ClCompile Include="Doom\Source\g_game.c" />
+    <ClCompile Include="Doom\Source\hu_lib.c" />
+    <ClCompile Include="Doom\Source\hu_stuff.c" />
+    <ClCompile Include="Doom\Source\icon.c" />
+    <ClCompile Include="Doom\Source\info.c" />
+    <ClCompile Include="Doom\Source\i_cdmus.c" />
+    <ClCompile Include="Doom\Source\i_endoom.c" />
+    <ClCompile Include="Doom\Source\i_input.c" />
+    <ClCompile Include="Doom\Source\i_joystick.c" />
+    <ClCompile Include="Doom\Source\i_scale.c" />
+    <ClCompile Include="Doom\Source\i_sound.c" />
+    <ClCompile Include="Doom\Source\i_system.c" />
+    <ClCompile Include="Doom\Source\i_timer.c" />
+    <ClCompile Include="Doom\Source\i_video.c" />
+    <ClCompile Include="Doom\Source\memio.c" />
+    <ClCompile Include="Doom\Source\mus2mid.c" />
+    <ClCompile Include="Doom\Source\m_argv.c" />
+    <ClCompile Include="Doom\Source\m_bbox.c" />
+    <ClCompile Include="Doom\Source\m_cheat.c" />
+    <ClCompile Include="Doom\Source\m_config.c" />
+    <ClCompile Include="Doom\Source\m_controls.c" />
+    <ClCompile Include="Doom\Source\m_fixed.c" />
+    <ClCompile Include="Doom\Source\m_menu.c" />
+    <ClCompile Include="Doom\Source\m_misc.c" />
+    <ClCompile Include="Doom\Source\m_random.c" />
+    <ClCompile Include="Doom\Source\p_ceilng.c" />
+    <ClCompile Include="Doom\Source\p_doors.c" />
+    <ClCompile Include="Doom\Source\p_enemy.c" />
+    <ClCompile Include="Doom\Source\p_floor.c" />
+    <ClCompile Include="Doom\Source\p_inter.c" />
+    <ClCompile Include="Doom\Source\p_lights.c" />
+    <ClCompile Include="Doom\Source\p_map.c" />
+    <ClCompile Include="Doom\Source\p_maputl.c" />
+    <ClCompile Include="Doom\Source\p_mobj.c" />
+    <ClCompile Include="Doom\Source\p_plats.c" />
+    <ClCompile Include="Doom\Source\p_pspr.c" />
+    <ClCompile Include="Doom\Source\p_saveg.c" />
+    <ClCompile Include="Doom\Source\p_setup.c" />
+    <ClCompile Include="Doom\Source\p_sight.c" />
+    <ClCompile Include="Doom\Source\p_spec.c" />
+    <ClCompile Include="Doom\Source\p_switch.c" />
+    <ClCompile Include="Doom\Source\p_telept.c" />
+    <ClCompile Include="Doom\Source\p_tick.c" />
+    <ClCompile Include="Doom\Source\p_user.c" />
+    <ClCompile Include="Doom\Source\r_bsp.c" />
+    <ClCompile Include="Doom\Source\r_data.c" />
+    <ClCompile Include="Doom\Source\r_draw.c" />
+    <ClCompile Include="Doom\Source\r_main.c" />
+    <ClCompile Include="Doom\Source\r_plane.c" />
+    <ClCompile Include="Doom\Source\r_segs.c" />
+    <ClCompile Include="Doom\Source\r_sky.c" />
+    <ClCompile Include="Doom\Source\r_things.c" />
+    <ClCompile Include="Doom\Source\sha1.c" />
+    <ClCompile Include="Doom\Source\sounds.c" />
+    <ClCompile Include="Doom\Source\statdump.c" />
+    <ClCompile Include="Doom\Source\st_lib.c" />
+    <ClCompile Include="Doom\Source\st_stuff.c" />
+    <ClCompile Include="Doom\Source\s_sound.c" />
+    <ClCompile Include="Doom\Source\tables.c" />
+    <ClCompile Include="Doom\Source\v_video.c" />
+    <ClCompile Include="Doom\Source\wi_stuff.c" />
+    <ClCompile Include="Doom\Source\w_checksum.c" />
+    <ClCompile Include="Doom\Source\w_file.c" />
+    <ClCompile Include="Doom\Source\w_file_stdc.c" />
+    <ClCompile Include="Doom\Source\w_main.c" />
+    <ClCompile Include="Doom\Source\w_wad.c" />
+    <ClCompile Include="Doom\Source\z_zone.c" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Window\Terminal\Terminal.cpp" />
+    <ClCompile Include="Window\AppWindow.cpp" />
+    <ClCompile Include="Window\Direct2D\Graphics.cpp" />
+    <ClCompile Include="Doom\DoomKeyboard.cpp" />
+    <ClCompile Include="Window\Input\Keyboard.cpp" />
+    <ClCompile Include="Window\Input\KeyboardEvents.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

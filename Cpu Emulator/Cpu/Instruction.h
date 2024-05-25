@@ -1,0 +1,47 @@
+
+enum Instruction
+{
+	NOP = 0x00,
+	MOVR = 0x01,
+	MOVS = 0x02,
+	MOVD = 0x04,
+	JMP = 0x01,
+	JZ = 0x03,
+	PUSH = 0x0f,
+	POP = 0x07,
+	IN = 0x0b,
+	OUT = 0x0c,
+
+	ADD = 0x80,
+	SUB = 0x81,
+	AND = 0x82,
+	OR = 0x83,
+	XOR = 0x84,
+	LSL = 0x85,
+	LSR = 0x86,
+	INC = 0x87,
+	MUL = 0x88,
+	DIV = 0x89,
+	DEC = 0x8F,
+
+	CMP = 0x81,
+};
+
+enum Params
+{
+	Data,
+	R0,
+	R1,
+	R2,
+	R3,
+	R4,
+	R5,
+	R6,
+	R7,
+	R8,
+	IP,
+	SP,
+	RP,
+	EX,
+	NP,
+};
