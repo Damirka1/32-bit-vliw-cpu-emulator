@@ -47,12 +47,33 @@ int main(int argc, char** argv)
 	window.AddWindowElement(&t);
 
 	t.AddCommand(L"/test", [&]() {
-		t.Print(L"Test");
+		t.Print(L"Just simple test\n");
 		});
 
 	DoomGame* inst = nullptr;
 
 	bool playDoom = false;
+
+	t.AddCommand(L"/doom", [&]() {
+		if (!inst)
+		{
+			inst = DoomGame::CreateInstance(w, h, &window, &gfx, argv, argc);
+			inst->Run();
+			window.DisableGraphics();
+			t.DisableTerminal();
+		}
+
+		playDoom = true;
+	});
+
+	t.AddKeyCommand('+', [&]() {
+		if (playDoom) 
+		{
+			playDoom = false;
+			window.EnableGraphics();
+			t.EnableTerminal();
+		}
+	});
 
 	while (!window.IsClosed()) 
 	{
@@ -73,38 +94,9 @@ int main(int argc, char** argv)
 				continue;
 
 			t.HandleChar(ch.value());
-
-			//if (ch == VK_BACK) //'\b'
-			//{
-			//	if (terminal.size() > 0 && !playDoom)
-			//		terminal.pop_back();
-			//}
-			//else if (ch == '+')
-			//{
-			//	playDoom = !playDoom;
-			//	if (playDoom)
-			//	{
-			//		if (!inst)
-			//		{
-			//			inst = DoomGame::CreateInstance(w, h, &window, &gfx, argv, argc);
-			//			inst->Run();
-			//		}
-			//		window.DisableGraphics();
-			//	}
-			//	else
-			//		window.EnableGraphics();
-			//}
-			//else
-			//{
-			//	if(!playDoom)
-			//		terminal += ch.value();
-			//}
 		}
 
-		/*if(!playDoom)
-			l->SetText(terminal);
-		else
-			DoomGame::GetInstance()->Tick();*/
-		
+		if(playDoom)
+			DoomGame::GetInstance()->Tick();
 	}
 }

@@ -53,6 +53,11 @@ public:
 		SetTimer(MainWindow, id, time, nullptr);
 	}
 
+	void DisableTimerForWindow(int id)
+	{
+		KillTimer(MainWindow, id);
+	}
+
 	Graphics& GetGraphics() 
 	{
 		return Graphics;

@@ -21,7 +21,22 @@ public:
 
     void AddCommand(std::wstring cmd, std::function<void()> function)
     {
-        commands[cmd] = function;
+        Commands[cmd] = function;
+    }
+
+    void AddKeyCommand(char cmd, std::function<void()> function)
+    {
+        KeyCommands[cmd] = function;
+    }
+
+    void DisableTerminal()
+    {
+        Disabled = true;
+    }
+
+    void EnableTerminal()
+    {
+        Disabled = false;
     }
 
     void Print(std::wstring str)
@@ -48,11 +63,14 @@ private:
     size_t CursorPositionY = 0;
     bool CursorVisible = false;
 
+    bool Disabled = false;
+
     IDWriteFactory* pDWriteFactory = NULL;
     IDWriteTextFormat* pTextFormat = NULL;
     ID2D1SolidColorBrush* pBrush = nullptr;
     D2D1_RECT_F layoutRect;
 
-    std::map<std::wstring, std::function<void()>> commands;
+    std::map<std::wstring, std::function<void()>> Commands;
+    std::map<char, std::function<void()>> KeyCommands;
 };
 

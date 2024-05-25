@@ -229,6 +229,7 @@
     <ClInclude Include="Doom\Source\w_merge.h" />
     <ClInclude Include="Doom\Source\w_wad.h" />
     <ClInclude Include="Doom\Source\z_zone.h" />
+    <ClInclude Include="Window\Terminal\Neofetch.h" />
     <ClInclude Include="Window\Terminal\Terminal.h" />
     <ClInclude Include="Window\AppWindow.h" />
     <ClInclude Include="Window\Direct2D\Graphics.h" />
